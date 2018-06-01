@@ -1,7 +1,7 @@
 @import '../../node_modules/antd/dist/antd.css';
 @import "register.css";
 @import "Login.css";
-
+@import "Header.css";
 .App {
     text-align: center;
 }
