@@ -43,6 +43,7 @@ export class Gallery extends Component {
 
 
 const wrapperStyle = {
+
     display: "block",
     minHeight: "1px",
     width: "100%",

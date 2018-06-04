@@ -2,6 +2,9 @@
 @import "register.css";
 @import "Login.css";
 @import "Header.css";
+@import "Main.css";
+@import "Home.css";
+
 .App {
     text-align: center;
 }
@@ -11,6 +14,7 @@
     height: 60px;
     float: left;
 }
+
 
 .App-header {
     background-color: #222;

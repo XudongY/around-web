@@ -1,8 +1,10 @@
 import React from 'react';
 import {GEO_OPTIONS, POS_KEY, AUTH_PREFIX, TOKEN_KEY, API_ROOT} from "../constants"
-import { Tabs, Button, Spin } from 'antd';
+import { Tabs, Spin } from 'antd';
 import $ from 'jquery';
 import {Gallery} from './Gallery';
+import {CreatePostButton} from "./CreatePostButton"
+
 const TabPane = Tabs.TabPane;
 
 export class Home extends React.Component {
@@ -107,14 +109,12 @@ export class Home extends React.Component {
     }
 
     render() {
-        const operations = <Button>extra action </Button>;
+        const operations = <CreatePostButton/>
         return(
-            <div>
                 <Tabs tabBarExtraContent={operations}  className="main-tabs">
                     <TabPane tab="Posts" key="1" type ="primary">{this.getGalleryPanelContent()}</TabPane>
                     <TabPane tab="Map" key="2" type ="primary">Content of tab 2</TabPane>
                 </Tabs>
-            </div>
         );
     }
 }
