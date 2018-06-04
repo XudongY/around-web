@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28c7b2a3-f834-43e6-b3f3-2d880afcb454" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/CreatePostButton.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/CreatePostForm.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Gallery.js" afterPath="$PROJECT_DIR$/src/components/Gallery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Home.js" afterPath="$PROJECT_DIR$/src/components/Home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/App.css" afterPath="$PROJECT_DIR$/src/styles/App.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/Home.css" afterPath="$PROJECT_DIR$/src/styles/Home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/Main.css" afterPath="$PROJECT_DIR$/src/styles/Main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/styles/register.css" afterPath="$PROJECT_DIR$/src/styles/register.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/CreatePostForm.js" afterPath="$PROJECT_DIR$/src/components/CreatePostForm.js" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -76,8 +68,8 @@
       <file leaf-file-name="CreatePostForm.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/CreatePostForm.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="82" lean-forward="false" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+            <state relative-caret-position="141">
+              <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -208,8 +200,8 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1441" />
-    <option name="y" value="33" />
+    <option name="x" value="-1733" />
+    <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="877" />
   </component>
@@ -397,15 +389,15 @@
       <updated>1527798667623</updated>
       <workItem from="1527798669124" duration="32810000" />
       <workItem from="1528069399134" duration="452000" />
-      <workItem from="1528131448697" duration="4601000" />
+      <workItem from="1528131448697" duration="6008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37863000" />
+    <option name="totallyTimeSpent" value="39270000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1441" y="33" width="1440" height="877" extended-state="0" />
+    <frame x="-1733" y="23" width="1440" height="877" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -837,8 +829,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/CreatePostForm.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="82" lean-forward="false" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+        <state relative-caret-position="141">
+          <caret line="42" column="22" lean-forward="true" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
