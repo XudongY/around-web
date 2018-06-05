@@ -1,19 +1,49 @@
 import React from 'react';
-import { withGoogleMap, withScriptjs, GoogleMap, Marker, InfoWindow} from'react-google-maps';
+import { withGoogleMap, withScriptjs, GoogleMap } from'react-google-maps';
+import { POS_KEY } from '../constants';
+import { AroundMarker } from './AroundMarker';
+
+
 
 class AroundMaps extends React.Component {
+    reloadMarkers = () => {
+        const center = this.map.getCenter();
+        const location = {
+            lat: center.lat(),
+            lon: center.lng(),
+        };
+        const range = this.getRange();
+        this.props.loadNearByPosts(location, range);
+    }
+    getRange = () => {
+        const google = window.google;
+        const center = this.map.getCenter();
+        const bounds = this.map.getBounds();
+        if (center && bounds) {
+            const ne = bounds.getNorthEast();
+            const right = new google.maps.LatLng(center.lat(), ne.lng());
+            return 0.001 * google.maps.geometry.spherical.computeDistanceBetween(center, right);
+        }
+    }
 
+    getMapRef = (map) => {
+        this.map = map;
+        window.map = map;
+    }
     render() {
+        const {lat, lon} = JSON.parse(localStorage.getItem(POS_KEY));
+        console.log(lat, lon);
         return (
             <GoogleMap
-                defaultZoom={8}
-                defaultCenter={{ lat: -34.397, lng: 150.644 }}>
-                <Marker
-                    position={{ lat: -34.397, lng: 150.644 }}>
-                    {/*{props.isOpen && <InfoWindow onCloseClick={props.onToggleOpen}>
-                       <div>google map</div>
-                    </InfoWindow>}*/}
-                </Marker>
+                ref = {this.getMapRef}
+                onDragEnd = {this.reloadMarkers}
+                onZoomChange = {this.reloadMarkers}
+                defaultZoom = {11}
+                defaultCenter = {{lat: lat, lng: lon}}
+            >
+                {this.props.posts.map((post)=>
+                    <AroundMarker key = {post.url} post = {post}/>
+                )}
             </GoogleMap>
         );
     }

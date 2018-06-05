@@ -14,7 +14,6 @@ export class Home extends React.Component {
         loadingPosts: false,
         error: '',
         posts: [],
-
     }
     componentDidMount() {
         this.getGeoLocation();
@@ -27,7 +26,6 @@ export class Home extends React.Component {
                 GEO_OPTIONS,
             );
         } else {
-            /*geolocation is not available*/
             this.setState({ error: 'Your browser does not support geolocation!' });
         }
     }
@@ -117,9 +115,13 @@ export class Home extends React.Component {
                     <TabPane tab="Map" key="2" type ="primary">
                         <WrappedAroundMap
                         googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places"
-                                                                           loadingElement={<div style={{ height: `100%` }} />}
-                                                                           containerElement={<div style={{ height: `400px` }} />}
-                                                                           mapElement={<div style={{ height: `100%` }} />}/></TabPane>
+                        loadingElement={<div style={{ height: `100%` }} />}
+                        containerElement={<div style={{ height: `600px` }} />}
+                        mapElement={<div style={{ height: `100%` }}/>}
+                        posts={this.state.posts}
+                        loadNearByPosts={this.loadNearByPosts}
+                        />
+                    </TabPane>
                 </Tabs>
         );
     }
