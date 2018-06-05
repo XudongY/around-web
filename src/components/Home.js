@@ -109,7 +109,7 @@ export class Home extends React.Component {
     }
 
     render() {
-        const operations = <CreatePostButton/>
+        const operations = <CreatePostButton loadNearbyPosts = {this.loadNearByPosts}/>
         return(
                 <Tabs tabBarExtraContent={operations}  className="main-tabs">
                     <TabPane tab="Posts" key="1" type ="primary">{this.getGalleryPanelContent()}</TabPane>
