@@ -16,6 +16,7 @@ class App extends Component {
         localStorage.removeItem(TOKEN_KEY);
         this.setState({ isLoggedIn : false });
     }
+
   render() {
     return (
       <div className="App">

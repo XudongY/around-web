@@ -15,6 +15,7 @@ class AroundMaps extends React.Component {
         const range = this.getRange();
         this.props.loadNearByPosts(location, range);
     }
+
     getRange = () => {
         const google = window.google;
         const center = this.map.getCenter();
